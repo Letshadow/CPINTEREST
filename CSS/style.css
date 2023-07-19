@@ -1,0 +1,257 @@
+/* -----------------ALLPAGES----------------*/
+*{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+body{  
+    width: 100vw;
+    height: 100vh;
+    background-color: #202124;
+}
+/*-----Menu principal-----*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100vw;
+    height:10vh;
+    position: fixed;
+    top: 0px;
+    background-color: #202124;
+}
+
+#navbar-pinterest{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+    width: 100vw;
+    height:9vh;
+    
+    background-color: #202124;
+}
+.link{
+    color: whitesmoke;
+ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2vh;
+    font-weight:700;
+    text-decoration: none; 
+}
+.JCSA1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.IR{
+    margin-left: 0.9vw;
+    margin-right: 0.18vw;
+    width: 65%;
+    height: 65%;
+    fill: red;
+}
+.IB{
+    padding: 2.3vh 1.5vw;
+    background-color: black;
+    border-radius: 24px;
+    color: white;
+}
+
+svg.ARR{
+    width: 1.5vh;
+    height: 1.5vh;
+    fill: black;
+    margin-left: -1%;
+}
+
+.Cuadro{
+    display: flex;
+    align-items: center;
+    color: #333;
+    background-color: #E9E9E9;
+    margin-left:1vw;
+    width: 57vw;
+    height: 75%;
+
+    border:none;
+    border-radius: 24px;
+}
+
+.finder{
+    width: 90%;
+    height: 100%;
+
+    border: none;
+    background-color: transparent;
+
+    outline: none;
+}
+
+.JCSA2{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content:space-around;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+}
+svg.IG{
+    width: 3.5vh;
+    height: 3.5vh;
+    fill: gray;
+}
+
+.Ilink{
+    text-decoration: none;
+}
+
+.IP{
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+}
+
+/*--------MAIN--------*/
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100vw;
+    height: 400vh;
+    background-color: #202124;
+}
+
+.card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 2vh 1vw;    
+    height: auto;
+    width: 18vw;
+}
+.CNT{
+    height: 90%;
+    width: 100%;
+}
+.DSF{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:start;
+    
+
+    padding: 4vh 2vh 2vh 0;
+    height: 10%;
+    width: 100%;
+}
+
+.IPN{
+    color: whitesmoke;
+    margin: 2vh 0 0 1vh;  
+}
+
+.foto{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.HVT{
+    display: none;
+    position: relative;
+    top:15vh;
+    left: -1vw;
+    margin-top:-16.5vh ;
+    width:100%;
+    height:100%;
+    justify-content: space-evenly;
+}
+
+
+.TBR{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 20vw;
+    height: 100%;
+
+}
+.BR{
+    padding: 2.3vh 1.5vw;
+    background-color: red;
+    border-radius: 24px;
+    color: white;
+}
+
+.BBR{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 20vw;
+    height: 100%;
+}
+.BW{
+    padding: 2.3vh 1.5vw;
+    background-color: whitesmoke;
+    border-radius: 24px;
+    color: black;
+}
+
+/* -------------DINAMICS ALLPAGES------------*/
+
+/*-----Menu principal-----*/
+.Cuadro:hover{
+    box-shadow: 0 1px 6px 0 blue;
+    border-color: rgba(223,225,229,0);
+    padding-left: 1% ;
+    .LUP{
+        display: none;
+    }
+    
+
+}
+
+.finder:focus-visible{
+    outline: none;
+}
+.Ilink:visited{
+    text-decoration: none;
+}
+
+.card-image:hover{
+    .foto{
+        opacity: 0.4;
+        filter:blur(1.5px);
+    }
+    .HVT{
+        display:block;
+        
+        height: auto;
+        
+    }
+    
+    
+}
+
+/*--------FOOTER--------*/
+
+
+@keyframes logoanm{
+    0% {transform: translateY(-5vh);}
+    50% {transform: translateY(5vh);}
+    100% {transform: translateY(-5vh);}
+}
